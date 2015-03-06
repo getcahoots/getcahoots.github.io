@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="995px" height="515px" viewBox="0 0 995 515" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-223.000000, -176.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(223.000000, 176.000000)">
+                <rect id="Rectangle-32" fill="#D8D8D8" sketch:type="MSShapeGroup" x="0" y="0" width="995" height="44"></rect>
+                <rect id="Rectangle-36" opacity="0.599999964" fill="#FFFEFE" sketch:type="MSShapeGroup" x="0" y="0" width="995" height="44"></rect>
+                <rect id="Rectangle-37" fill="#F0F0F0" sketch:type="MSShapeGroup" x="0" y="44" width="995" height="471"></rect>
+                <rect id="Rectangle-34" fill="#BEBEC6" sketch:type="MSShapeGroup" x="0" y="44" width="995" height="1"></rect>
+                <circle id="Oval-11" fill="#C45230" sketch:type="MSShapeGroup" cx="24" cy="22" r="8"></circle>
+                <circle id="Oval-11" fill="#96969A" sketch:type="MSShapeGroup" cx="50" cy="22" r="8"></circle>
+                <rect id="Rectangle-33" fill="#F0F0F0" sketch:type="MSShapeGroup" x="244" y="8" width="507" height="28" rx="2"></rect>
+                <path d="M730.707031,18.2421875 L740.125077,27.6602334" id="Path-307" stroke="#96969A" stroke-width="0.9" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M730.707031,18.2421875 L740.125077,27.6602334" id="Path-308" stroke="#96969A" stroke-width="0.9" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(735.416054, 22.951210) scale(-1, 1) translate(-735.416054, -22.951210) "></path>
+                <text id="@getcahoots" sketch:type="MSTextLayer" font-family="Ubuntu" font-size="14" font-weight="260" fill="#585863">
+                    <tspan x="255" y="27">@getcahoots</tspan>
+                </text>
+                <path d="M721.167147,23.7310424 C721.167147,26.165217 719.297881,28.1455461 716.999944,28.1455461 C714.702147,28.1455461 712.832853,26.165217 712.832853,23.7310424 C712.832853,21.4411372 714.487514,19.5726824 716.596667,19.3568919 L716.596667,20.3215761 C716.596667,20.4741646 716.673644,20.615202 716.798277,20.6915112 C716.860706,20.7296359 716.930395,20.748788 716.999944,20.748788 C717.069605,20.748788 717.139124,20.7296658 717.201525,20.6915112 L719.543446,19.2593815 C719.668305,19.1831322 719.745056,19.0421247 719.745056,18.8894763 C719.745056,18.7368579 719.668305,18.5957606 719.543446,18.5195112 L717.201525,17.0871721 C717.076723,17.0108329 716.923136,17.0108329 716.798277,17.0871721 C716.673644,17.1634214 716.596667,17.3045486 716.596667,17.4571372 L716.596667,18.4376831 C714.04226,18.6560771 711.91394,20.9697256 711.91394,23.7310123 C711.91394,26.6362991 714.257514,29.0667724 716.999944,29.0667724 C719.742543,29.0667724 722.056763,26.6362991 722.056763,23.7310123 C722.056763,23.4951719 721.843089,23.2835622 721.633179,23.2835693 C721.423268,23.2835764 721.167147,23.4951721 721.167147,23.7310424 Z" id="Shape" fill="#96969A" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-35" fill="#F0F0F0" sketch:type="MSShapeGroup" x="196" y="8" width="28" height="28" rx="2"></rect>
+                <rect id="Rectangle-35" fill="#F0F0F0" sketch:type="MSShapeGroup" x="163" y="8" width="28" height="28" rx="2"></rect>
+                <path d="M206.01125,15 L216,21.9960603 L206,29" id="Path-308" stroke="#ABABB1" stroke-width="0.9" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <path d="M171.01125,15 L181,21.9960603 L171,29" id="Path-308" stroke="#ABABB1" stroke-width="0.9" stroke-linecap="round" sketch:type="MSShapeGroup" transform="translate(176.000000, 22.000000) scale(-1, 1) translate(-176.000000, -22.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

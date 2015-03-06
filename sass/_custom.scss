@@ -1,0 +1,184 @@
+// Your custom SCSS should be written here...
+
+body {
+	 @include font-smoothing(on);
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 114px;
+	width: 100%;
+	display: inline-block;
+	background: $global-bg-color;
+	@include box-shadow(0 1px 16px rgba(0,0,0,0.12));
+	@include transition(all ease-in-out 0.2s);
+	& .twelve { 
+		margin-top: 32px;
+		@include transition(all ease-in-out 0.2s);
+	}
+	& .field {
+		display: inline-block;
+		float: right;
+		margin-top: 4px;
+	}
+}
+
+.wrapper {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	&#install {
+		text-align: center;
+		margin-bottom: 50px; 
+	}
+	&#descr {
+		text-align: center
+	}
+}
+
+#intro {
+	margin-top: 113px;
+	height: 545px;
+	width: 100%;
+	background: url('../img/bg.jpg') center center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	& #chrome {
+		width: 1055px;
+		height: 493px;
+		background: url('../img/chrome.png') top center no-repeat;
+		background-size: 1030px 543px;
+		margin: 0 auto;
+	}
+	& h1 {
+		margin-top: 90px;
+		font-weight: 400;
+		text-align: center;
+		color: $cahoots-color;
+	}
+	& article {
+		width: 800px;
+		text-align: center;
+		line-height: 1.5em;
+		margin: 10px auto 0 auto;
+		& p {
+			font-size: 1.4em;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.cahoots_test {
+	background: $cahoots-highlight-color;
+	padding: 5px 8px;
+	font-weight: 400;
+	@include border-radius(3px);
+	&:before {
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAOAAAADgCxW/H3AAABo0lEQVQoz43SXWjNcRzH8dfvf04pRK0tT7E1NpqHUuNCyUMpaqTWdiG52M1KEe5ELqTkVpKU5KHU5tzYBeXhhptFeVqhxFLLatZpm42dp58L5+iQp8/l9/t596nv9xPyjV2qVIsjaENzefYat3AWnyrGUAW24xLm+r3G0YUMJFVQ718gmFP2tFcS6/C2vGDmDGFDi7C4Vnz+XhwYJFf4NbkpjQMVKLQ2SQ7vFpYtJBCncuLlu0rX7lOK1cmH0tgFoXmR1Pn9pFLi2CRT00LNbPZtlRSKSj0Pyf9IbktjhVQiOdpJoajU80jpXB+5vLCyXti7RdizWbJ0vtLFOwxnYXnqRF3r8aRjYzrZuV7x5A3x+gPyRSJGxsSXg0IShE2rhfp531Nzha/psG3tUOje3hifvRNvP/n5jjEynFW6ck8YGpV07xDWNfPqw3QSWpa88DGreOzqnx/xJSf29Sud6WV0XMxOPg6FgxcajIwNxP43s/yPFtR8DmsaVlWaUylA+AcW0YFMpTkZdGLiL9BEBaquHNxEI05jAHlM4ilOlXeZivkbE0WRUzsnl8UAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDYtMjdUMTU6MzE6MTQrMDI6MDD2LRwyAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTA2LTI3VDE1OjMxOjE0KzAyOjAwh3CkjgAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=);
+		background-size: 12px 12px;
+		display: inline-block;
+		min-width: 14px;
+		min-height: 14px;
+		content: " ";
+		margin-right: 0px;
+	}
+}
+
+.subline {
+	color: $secondary-color;
+	display: block;
+	text-align: center; 
+	margin-top:10px;
+	line-height: 1.2em;
+	font-weight: 300;
+}
+
+.content_light {
+	background: $global-bg-color;
+	z-index: 100;
+	width: 100%;
+	height: auto;
+	padding: 40px 0;
+	@include box-shadow(0 -2px 20px rgba(0,0,0,0.2));
+	border-top: 1px solid darken($global-bg-color, 5%);
+}
+
+#install_intro {
+	margin-bottom: 20px;
+}
+
+.browser {
+	padding: 6px 18px 4px 13px;
+	border-radius: $bigger-radius*1.5;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	&:hover {
+		cursor: pointer;
+	}
+	&.chrome {
+		margin-right: 15px;
+		background: $chrome-browser;
+		border: 1px solid lighten($chrome-browser,5%);
+		&:before {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url('../img/chrome_browser.svg');
+			background-size: 30px 30px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background-repeat: no-repeat;
+			content: " ";
+			margin: -2px 10px 0 0;
+			vertical-align: middle;
+		}
+	}
+	&.firefox{
+		margin-right: 15px;
+		background: $firefox-browser;
+		border: 1px solid lighten($firefox-browser,5%);
+		&:before {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url('../img/firefox_browser.svg');
+			background-size: 30px 30px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background-repeat: no-repeat;
+			content: " ";
+			margin: -2px 10px 0 0;
+			vertical-align: middle;
+		}
+	}
+	&.safari{
+		background: $safari-browser;
+		border: 1px solid lighten($safari-browser,5%);
+		&:before {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-image: url('../img/safari_browser.svg');
+			background-size: 30px 30px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			background-repeat: no-repeat;
+			content: " ";
+			margin: -2px 10px 0 0;
+			vertical-align: middle;
+		}
+	}
+}
+
+.text {
+	&.main {
+		width: 48%;
+		margin: 0 auto;
+	}
+}
