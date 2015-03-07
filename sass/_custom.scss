@@ -13,10 +13,10 @@ header {
 	display: inline-block;
 	background: $global-bg-color;
 	@include box-shadow(0 1px 16px rgba(0,0,0,0.12));
-	@include transition(all ease-in-out 0.2s);
+	@include transition(all ease-in-out 0.3s);
 	& .twelve { 
 		margin-top: 32px;
-		@include transition(all ease-in-out 0.2s);
+		@include transition(all ease-in-out 0.16s);
 	}
 	& .field {
 		display: inline-block;
@@ -98,14 +98,19 @@ header {
 	font-weight: 300;
 }
 
-.content_light {
-	background: $global-bg-color;
+.content {
 	z-index: 100;
 	width: 100%;
 	height: auto;
-	padding: 40px 0;
+	padding: 60px 0;
 	@include box-shadow(0 -2px 20px rgba(0,0,0,0.2));
 	border-top: 1px solid darken($global-bg-color, 5%);
+	&.light {
+		background: $global-bg-color;
+	}
+	&.dark {
+		background: $default-color;
+	}
 }
 
 #install_intro {
@@ -181,4 +186,90 @@ header {
 		width: 48%;
 		margin: 0 auto;
 	}
+}
+
+.teaser {
+	color: $global-bg-color;
+	display: inline-block;
+	width: 22%;
+	margin-right: 3%;
+	vertical-align: top;
+	& h3 {
+		font-size: 1.1em;
+		font-weight: 400;
+		color: $global-bg-color;
+		margin-bottom: 10px;
+		&#suggest {
+			&:before {
+				background-repeat: no-repeat;
+				background-position: left 50%;
+				background-image: url('../img/suggest.png');
+				background-size: 30px 30px;
+				display: inline-block;
+				min-width: 42px;
+				min-height: 30px;
+				content: " ";
+				margin-right: 0px;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+		}
+		&#github {
+			&:before {
+				background-repeat: no-repeat;
+				background-position: left 50%;
+				background-image: url('../img/github.png');
+				background-size: 30px 30px;
+				display: inline-block;
+				min-width: 42px;
+				min-height: 30px;
+				content: " ";
+				margin-right: 0px;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+		}
+		&#forum {
+			&:before {
+				background-repeat: no-repeat;
+				background-position: left 50%;
+				background-image: url('../img/forum.png');
+				background-size: 30px 30px;
+				display: inline-block;
+				min-width: 42px;
+				min-height: 30px;
+				content: " ";
+				margin-right: 0px;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+		}
+		&#chat {
+			&:before {
+				background-repeat: no-repeat;
+				background-position: left 50%;
+				background-image: url('../img/chat.png');
+				background-size: 30px 30px;
+				display: inline-block;
+				min-width: 42px;
+				min-height: 30px;
+				content: " ";
+				margin-right: 0px;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+		}
+	}
+}
+
+a:last-child > .teaser {
+	margin-right: 0;
+}
+
+.cahoots-proposal-form {
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important; 
+	width: 50% !important;
+	margin: 0 auto !important; 
 }

@@ -72,7 +72,7 @@
 				</span>
 			</article>
 	</section>
-	<section class="content_light">
+	<section class="content light">
 		<div class="wrapper" id="install">
 			<span class="subline" id="install_intro">
 				Jetzt installieren unter
@@ -90,8 +90,47 @@
 			</p>
 		</div>
 	</section>
-
-
+	<section class="content dark">
+		<div class="wrapper" id="teaser">
+			<a href="#suggest">
+				<article class="teaser one">
+					<h3 id="suggest">Vorschlagen</h3>
+					<div class="teaser_text">
+						Hast du neue Vorschläge für unsere Datenbank? Hier kannst du Vorschläge einreichen, die dann im Forum verifiziert werden.
+					</div>
+				</article>
+			</a>
+			<a href="https://github.com/getcahoots" target="_blank">
+				<article class="teaser two">
+					<h3 id="github">GitHub</h3>
+					<div class="teaser_text">
+						Wer Transparenz fordert, muss auch transparent arbeiten: Den Quellcode unseres Projekts findest du auf GitHub.
+					</div>
+				</article>
+			</a>
+			<a href="http://forum.cahoots.testing/index.php?p=/" target="_blank">
+			<article class="teaser three">
+				<h3 id="forum">Forum</h3>
+				<div class="teaser_text">
+					Wir setzen auf nutzergenerierte Inhalte. Deshalb braucht Cahoots eure Hilfe beim Verifizieren der Verbindungen.
+				</div>
+			</article>
+			</a>
+			<a href="http://webchat.freenode.net/?randomnick=1&channels=cahoots.pw" target="_blank">
+			<article class="teaser four">
+				<h3 id="chat">Chat</h3>
+				<div class="teaser_text">
+					Du erreichst uns auf schnellstem Wege via IRC. Und wenn mal niemand dort ist, loggt unser Bot Edeltraud deine Anfrage mit.
+				</div>
+			</article>
+			</a>
+		</div>
+	</section>
+	<section class="content light">
+		<div class="wrapper" id="teaser">
+			<cahoots-proposal></cahoots-proposal>
+		</div>
+	</section>
 
 
 
@@ -130,6 +169,7 @@
 	<script src="js/libs/ui/gumby.navbar.js"></script>
 	<script src="js/libs/ui/jquery.validation.js"></script>
 	<script src="js/libs/gumby.init.js"></script>
+	<script src="js/libs/cahoots-proposal.min.js"></script>
 
 	<!--
 	Google's recommended deferred loading of JS
