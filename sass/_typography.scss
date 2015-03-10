@@ -40,7 +40,10 @@ h2 {
   margin-bottom:15px;
 }
 h3 { @include font-size($larger);}
-h4 { @include font-size($large);}
+h4 { 
+  @include font-size($large); 
+  margin-bottom: 15px;
+}
 h5 { @include font-size($med);}
 h6 { @include font-size($norm);}
 

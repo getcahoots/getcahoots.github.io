@@ -38,7 +38,7 @@
 	<link rel="stylesheet" href="css/gumby.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 
-	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="js/libs/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -49,6 +49,7 @@
 				   <source src="img/cahoots-logo.svg">
 				   <img src="img/cahoots-logo.png">
 				</picture>
+				<div class="button-wrap"><button data-dialog="somedialog" class="browser trigger">Verbindung vorschlagen</button></div>
 				<div class="field">
 					<input type="search" class="input" placeholder="Nach Journalisten/Verbindungen suchen">
 				<div class="field">
@@ -127,24 +128,30 @@
 		</div>
 	</section>
 	<section class="content light">
-		<article class="sub_text">
-			<h4>
-				Wie werden die Quellen verifiziert?
-			</h4>
-			<p>
-				Nachdem wir in den ersten Monaten selbst alle vorgeschlagenen Verbindungen überprüften und optimierten werden hat der Verifizierungsprozess nuneinen demokratischen "Relaunch" erfahren: In unserem Forum hat jeder die Möglichkeit, die Vorschläge zu diskutieren. Wenn eine Verbindung positives Feedback erhalten hat und die Quellen verifiziert sind, schieben unsere Admins [Link zu Informationen überdie Admins] den jeweiligen Datensatz in die Datenbank.
-			</p>
-		</article>
-		<article class="sub_text">
-			<h4>
-				Wer betreibt Cahoots?
-			</h4>
-			<p>
-				Alexander Barnickel und Jonas Bergmeier haben die Erweiterung innerhalb eines Kurses bei Prof. Jens Wunderling im Studiengang "Interaction Design M.A." ander HS Magdeburg-Stendal konzipiert und entwickelt. Auf die Idee kam Alex durch einen Beitrag der ZDF-Satiresendung "Die Anstalt". Aufgrund des unerhofft starken Zuspruchs haben wir nach Abschluss des Kurses an Cahoots weitergearbeitet. Mit Oliver Sommer, André König und Julian Fath ist unser Team mittlerweile auf fünf Personen angewachsen.
-			</p>
-		</article>
-		<div class="wrapper" id="teaser">
-			<cahoots-proposal></cahoots-proposal>
+		<div class="wrapper" id="sub">
+			<article class="sub_text">
+				<h4>
+					Wie werden die Quellen verifiziert?
+				</h4>
+				<p>
+					Nachdem wir in den ersten Monaten selbst alle vorgeschlagenen Verbindungen überprüften und optimierten werden hat der Verifizierungsprozess nuneinen demokratischen "Relaunch" erfahren: In unserem Forum hat jeder die Möglichkeit, die Vorschläge zu diskutieren. Wenn eine Verbindung positives Feedback erhalten hat und die Quellen verifiziert sind, schieben unsere Admins [Link zu Informationen überdie Admins] den jeweiligen Datensatz in die Datenbank.
+				</p>
+			</article>
+			<article class="sub_text">
+				<h4>
+					Wer betreibt Cahoots?
+				</h4>
+				<p>
+					Alexander Barnickel und Jonas Bergmeier haben die Erweiterung innerhalb eines Kurses bei Prof. Jens Wunderling im Studiengang "Interaction Design M.A." ander HS Magdeburg-Stendal konzipiert und entwickelt. Auf die Idee kam Alex durch einen Beitrag der ZDF-Satiresendung "Die Anstalt". Aufgrund des unerhofft starken Zuspruchs haben wir nach Abschluss des Kurses an Cahoots weitergearbeitet. Mit Oliver Sommer, André König und Julian Fath ist unser Team mittlerweile auf fünf Personen angewachsen.
+				</p>
+			</article>
+		</div>
+		<div id="somedialog" class="dialog">
+			<div class="dialog__overlay"></div>
+			<div class="dialog__content">
+				<cahoots-proposal></cahoots-proposal>
+				<button class="action" data-dialog-close>Close</button></div>
+			</div>
 		</div>
 	</section>
 
@@ -186,6 +193,17 @@
 	<script src="js/libs/ui/jquery.validation.js"></script>
 	<script src="js/libs/gumby.init.js"></script>
 	<script src="js/libs/cahoots-proposal.min.js"></script>
+	<script src="js/libs/dialogFx.js"></script>
+	<script src="js/libs/classie.js"></script>
+	<script>
+		(function() {
+			var dlgtrigger = document.querySelector( '[data-dialog]' ),
+				somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+				dlg = new DialogFx( somedialog );
+				dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+			})()
+		</script>
 
 	<!--
 	Google's recommended deferred loading of JS
