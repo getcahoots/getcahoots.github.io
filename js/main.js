@@ -25,14 +25,14 @@ Gumby.ready(function() {
 $(document).ready(function() {
     if ($(window).width() > 1025) {
         $(window).scroll(function() {
-            if ($(window).scrollTop() > 100) {
+            if ($(window).scrollTop() > 220) {
                 $('.header').css({
                     height: '66px',
                 });
                 $('.twelve').css({
                     marginTop: '7px',
                 });
-            } else if ($(window).scrollTop() < 100) {
+            } else if ($(window).scrollTop() < 220) {
                 $('.header').css({
                     height: '114px',
                 });

@@ -17,7 +17,7 @@ header {
 	@include transition(all ease-in-out 0.3s);
 	& .twelve { 
 		margin-top: 32px;
-		@include transition(all ease-in-out 0.16s);
+		@include transition(all ease-in-out 0.3s);
 	}
 	& .field {
 		display: inline-block;
@@ -133,7 +133,14 @@ header {
 	&.chrome {
 		margin-right: 15px;
 		background: $chrome-browser;
-		border: 1px solid lighten($chrome-browser,5%);
+		border: 1px solid lighten($chrome-browser,3%);
+		border-bottom: 2px solid transparent;
+		@include transition(all ease-in-out 0.125s);
+		&:hover {
+			background: lighten($chrome-browser,13%);
+			border-top: 1px solid lighten($chrome-browser,13%);
+			border-bottom: 2px solid darken($chrome-browser,8%);
+		}
 		&:before {
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -151,7 +158,14 @@ header {
 	&.firefox{
 		margin-right: 15px;
 		background: $firefox-browser;
-		border: 1px solid lighten($firefox-browser,5%);
+		border: 1px solid lighten($firefox-browser,3%);
+		border-bottom: 2px solid transparent;
+		@include transition(all ease-in-out 0.125s);
+		&:hover {
+			background: lighten($firefox-browser,10%);
+			border-top: 1px solid lighten($firefox-browser,10%);
+			border-bottom: 2px solid darken($firefox-browser,8%);
+		}
 		&:before {
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -168,7 +182,19 @@ header {
 	}
 	&.safari{
 		background: $safari-browser;
-		border: 1px solid lighten($safari-browser,5%);
+		border: 1px solid lighten($safari-browser,3%);
+		border-bottom: 2px solid transparent;
+		@include transition(all ease-in-out 0.125s);
+		&:hover {
+			background: lighten($safari-browser,10%);
+			border-top: 1px solid lighten($safari-browser,10%);
+			border-bottom: 2px solid darken($safari-browser,8%);
+		}
+		&:focus {
+			background: darken($safari-browser,10%);
+			border-top: 0;
+			border: 1px solid darken($safari-browser,5%);
+		}
 		&:before {
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -198,10 +224,11 @@ header {
 	width: 22%;
 	margin-right: 3%;
 	vertical-align: top;
-	@include transition(all .5s ease-in-out);
+	@include transition(all .4s ease-in-out);
 	@include text-shadow(0 0 1px $primary-color);
 	&:hover {
-		color: #fff; 
+		color: #fff;
+		@include text-shadow(0 0 20px rgba(0,0,0,0.75));
 	}
 	& h3 {
 		font-size: 1.1em;
