@@ -98,7 +98,7 @@
 	</section>
 	<section class="content dark">
 		<div class="wrapper" id="teaser">
-			<a href="#suggest">
+			<a onclick=" ">
 				<article class="teaser one">
 					<h3 id="suggest">Vorschlagen</h3>
 					<div class="teaser_text">
@@ -224,14 +224,14 @@
 	<script src="js/libs/dialogFx.js"></script>
 	<script src="js/libs/classie.js"></script>
 	<script>
-		(function() {
-			var dlgtrigger = document.querySelector( '[data-dialog]' ),
-				somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
-				dlg = new DialogFx( somedialog );
-				dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+	(function() {
+		var dlgtrigger = document.querySelector( '[data-dialog]' ),
+		somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+		dlg = new DialogFx( somedialog );
+		dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 
-			})()
-		</script>
+	})()
+	</script>
 
 	<!--
 	Google's recommended deferred loading of JS

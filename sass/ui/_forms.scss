@@ -75,6 +75,12 @@ form {
     height: 47px;
     @include font-size($norm);
     @include border-radius(3px);
+    @include input-placeholder {
+      @include transition(all ease-in-out 0.3s)
+    }
+    @include input-placeholder-focus {
+      @include opacity(0.4);
+    }
     &.search {
       @include line-and-height(height-calc($norm));
       @include shape(oval);

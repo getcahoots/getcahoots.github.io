@@ -1445,6 +1445,16 @@ form fieldset legend { padding: 5px 10px; }
 .field.metro, .field .metro { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 .field input, .field input[type="*"], .field textarea { font-style: italic; max-width: 100%; width: 100%; padding: 0; margin: 0; border: none; outline: none; resize: none; -webkit-appearance: none; font-family: "Ubuntu"; font-weight: 300; font-size: 16px; font-size: 1rem; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 .field .input { position: relative; padding: 0 10px; background: #fff; border: 1px solid #d8d8df; height: 47px; font-size: 16px; font-size: 1rem; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.field .input.placeholder { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.field .input:-moz-placeholder { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.field .input::-moz-placeholder { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.field .input:-ms-input-placeholder { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.field .input::-webkit-input-placeholder { -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.field .input:focus.placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
+.field .input:focus:-moz-placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
+.field .input:focus::-moz-placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
+.field .input:focus:-ms-input-placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
+.field .input:focus::-webkit-input-placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40); opacity: 0.4; }
 .field .input.search { height: 36px; line-height: 34px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
 .field .input.textarea { height: auto; }
 
@@ -1709,7 +1719,7 @@ header .field { display: inline-block; float: right; margin-top: 1px; }
 @media only screen and (max-width: 767px) { #intro { background: #F4F4F6; height: auto; margin-top: 0; } }
 #intro #chrome { width: 1055px; height: 493px; background: url("../img/chrome.png") top center no-repeat; background-size: 1030px 543px; margin: 0 auto; }
 @media only screen and (max-width: 767px) { #intro #chrome { background: #F4F4F6; height: auto; } }
-#intro h1 { margin-top: 90px; font-weight: 400; text-align: center; color: #F53262; }
+#intro h1 { margin-top: 110px; font-weight: 400; text-align: center; color: #F53262; }
 @media only screen and (max-width: 767px) { #intro h1 { font-size: 2em; margin: 40px 0; } }
 #intro article { width: 800px; text-align: center; line-height: 1.5em; margin: 10px auto 0 auto; }
 @media only screen and (max-width: 767px) { #intro article { display: none; } }

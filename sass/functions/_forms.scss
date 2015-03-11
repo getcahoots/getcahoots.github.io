@@ -16,3 +16,20 @@
   }
   #{$sizes} { @content }
 }
+
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; } 
+}
+
+@mixin input-placeholder-focus {
+    &:focus.placeholder { @content; }
+    &:focus:-moz-placeholder { @content; }
+    &:focus::-moz-placeholder { @content; }
+    &:focus:-ms-input-placeholder { @content; }
+    &:focus::-webkit-input-placeholder { @content; } 
+}
