@@ -15,6 +15,7 @@ header {
 	//@include box-shadow(0 1px 16px rgba(0,0,0,0.12));
 	border-bottom: 1px solid darken($global-bg-color,6%);
 	@include transition(all ease-in-out 0.3s);
+	@include opacity(0.96);
 	@include respond(all-phones) {
 		background: $global-bg-color;
 		position: static;
@@ -152,12 +153,13 @@ header {
 	height: auto;
 	padding: 60px 0;
 	@include box-shadow(0 -2px 20px rgba(0,0,0,0.2));
-	border-top: 1px solid darken($global-bg-color, 5%);
 	&.light {
-		background: $global-bg-color;
+		@include background-image(linear-gradient(top, $global-bg-color 0%,darken($global-bg-color,6%) 100%));
+		border-top: 1px solid darken($global-bg-color, 5%);
 	}
 	&.dark {
-		background: $default-color;
+		@include background-image(linear-gradient(left top, #3e3e47 0%,#25252d 100%));
+		border-top: 1px solid #25252d;
 	}
 }
 
@@ -287,17 +289,21 @@ header {
 	width: 22%;
 	margin-right: 3%;
 	vertical-align: top;
-	@include transition(all .4s ease-in-out);
+	@include transition(all .1s ease-in-out);
 	@include text-shadow(0 0 1px $primary-color);
 	&:hover {
 		color: #fff;
-		@include text-shadow(0 0 20px rgba(0,0,0,0.75));
+		@include text-shadow(0 0 20px rgba(0,0,0,0.6));
+		& h3 {
+			color: #fff;
+		}
 	}
 	& h3 {
 		font-size: 1.1em;
-		font-weight: 400;
-		color: $global-bg-color;
+		font-weight: 600;
+		color: darken($global-bg-color,10%);
 		margin-bottom: 10px;
+		@include transition(all .3s ease-in-out);
 		&#suggest {
 			&:before {
 				background-repeat: no-repeat;
@@ -521,7 +527,7 @@ a:last-child > .teaser {
 .dialog__overlay {
 	position: absolute;
 	z-index: 1;
-	background: rgba(55, 58, 71, 0.9);
+	background: rgba(245,50,98,0.92);
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;

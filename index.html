@@ -151,16 +151,17 @@
 				</p>
 			</article>
 		</div>
-		<div id="somedialog" class="dialog">
-			<div class="dialog__overlay"></div>
-			<div class="dialog__content">
-				<cahoots-proposal></cahoots-proposal>
-				<button class="action" data-dialog-close>schließen</button></div>
-			</div>
-		</div>
+		<cahoots-changelog></cahoots-changelog>
+		
 	</section>
 
-
+	<div id="somedialog" class="dialog">
+		<div class="dialog__overlay"></div>
+		<div class="dialog__content">
+			<cahoots-proposal></cahoots-proposal>
+			<button class="action" data-dialog-close>schließen</button></div>
+		</div>
+	</div>
 
 
 	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
@@ -221,6 +222,7 @@
 	<script src="js/libs/ui/jquery.validation.js"></script>
 	<script src="js/libs/gumby.init.js"></script>
 	<script src="js/libs/cahoots-proposal.min.js"></script>
+	<script src="js/libs/cahoots-changelog.min.js"></script>
 	<script src="js/libs/dialogFx.js"></script>
 	<script src="js/libs/classie.js"></script>
 	<script>
