@@ -14,9 +14,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Cahoots</title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="humans.txt">
+	<meta name="description" content="Cahoots ist eine Browser-Extension und zeigt dir Verbindungen von Journalisten zu Vereinen, Organisationen und Unternehmen.">
+  	<meta name="keywords" content="cahoots, firefox, chrome, installieren, extension, journalisten, verbindungen, lobby">
+  	<meta name="revisit-after" content="7 days">
+  	<meta name="language" content="german">
 
 	<!-- <link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> -->
 
@@ -31,12 +32,16 @@
 	<meta itemprop="description" content="">
 	<meta itemprop="image" content="">
 
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
 	<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
 		 However, there is a blank style.css in the css directory should you prefer -->
 	<link rel="stylesheet" href="css/gumby.css">
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
+
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/acajoolgbgnpbmefodjcfbbfahnhhanp">
 
 	<script src="js/libs/modernizr.custom.js"></script>
 </head>
@@ -78,7 +83,7 @@
 			<span class="subline" id="install_intro">
 				Jetzt installieren unter
 			</span>
-			<button class="browser chrome">Chrome</button>
+			<button class="browser chrome" onclick="chrome.webstore.install()" id="install-button">Chrome</button>
 			<button class="browser firefox">Firefox</button>
 			<button class="browser safari">Safari</button>
 		</div>
@@ -176,6 +181,29 @@
 	  document.write('<script src="js/libs/jquery-1.10.1.min.js"><\/script>');
 	}
 	}
+	</script>
+	<script>
+	if (chrome.app.isInstalled) {
+	  document.getElementById('install-button').style.display = 'none';
+	}
+	</script>
+	<script type="application/javascript">
+<!--
+	function install (aEvent)
+	{
+	  for (var a = aEvent.target; a.href === undefined;) a = a.parentNode;
+	  var params = {
+	    "Foo": { URL: aEvent.target.href,
+	             IconURL: aEvent.target.getAttribute("iconURL"),
+	             Hash: aEvent.target.getAttribute("hash"),
+	             toString: function () { return this.URL; }
+	    }
+	  };
+	  InstallTrigger.install(params);
+
+	  return false;
+	}
+	-->
 	</script>
 
 	<!--
