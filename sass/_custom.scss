@@ -527,7 +527,8 @@ a:last-child > .teaser {
 .dialog__overlay {
 	position: absolute;
 	z-index: 1;
-	background: rgba(245,50,98,0.92);
+	@include background-image(linear-gradient(left top,  rgba(245,50,98,0.94) 0%,rgba(255, 255, 145,0.94) 100%));
+	//background: rgba(245,50,98,0.92);
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
