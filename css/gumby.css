@@ -1458,6 +1458,10 @@ form fieldset legend { padding: 5px 10px; }
 .field .input.search { height: 36px; line-height: 34px; -moz-border-radius: 1000px; -webkit-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
 .field .input.textarea { height: auto; }
 
+input, .input { padding: 10px 12px; border-radius: 3px; font-weight: 400; font-size: 1em; width: 100%; border: 1px solid #96969A; }
+input[type="submit"], .input[type="submit"] { width: 50%; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; border: 1px solid #40404a; border-bottom: 2px solid transparent; }
+input[type="submit"]:hover, .input[type="submit"]:hover { background: #585866; border-top: 0px solid #585866; border-bottom: 2px solid #26262c; }
+input[type="submit"]:focus, .input[type="submit"]:focus { background: #212127; border-top: 0; border: 1px solid #2d2d34; }
 input.xnarrow, .input.xnarrow { width: 13.3333333333%; margin: 0; }
 input.xnarrow:last-child, .input.xnarrow:last-child { margin-left: -4px; }
 input.xnarrow:first-child, .input.xnarrow:first-child { margin-right: 3.94%; margin-left: 0; }
@@ -1743,9 +1747,11 @@ header .field { display: inline-block; float: right; margin-top: 1px; }
 .browser:hover { cursor: pointer; }
 .browser.chrome { margin-right: 15px; background: #1DC466; border: 1px solid #1fd16d; border-bottom: 2px solid transparent; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; }
 .browser.chrome:hover { background: #40e387; border-top: 1px solid #40e387; border-bottom: 2px solid #18a054; }
+.browser.chrome:focus { background: #16984f; border-top: 0; border: 1px solid #1aae5a; }
 .browser.chrome:before { background-repeat: no-repeat; background-position: center center; background-image: url("../img/chrome_browser.svg"); background-size: 30px 30px; display: inline-block; width: 30px; height: 30px; background-repeat: no-repeat; content: " "; margin: -2px 10px 0 0; vertical-align: middle; }
 .browser.firefox { margin-right: 15px; background: #C4511D; border: 1px solid #d1571f; border-bottom: 2px solid transparent; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; }
 .browser.firefox:hover { background: #e16933; border-top: 1px solid #e16933; border-bottom: 2px solid #a04218; }
+.browser.firefox:focus { background: #983f16; border-top: 0; border: 1px solid #ae481a; }
 .browser.firefox:before { background-repeat: no-repeat; background-position: center center; background-image: url("../img/firefox_browser.svg"); background-size: 30px 30px; display: inline-block; width: 30px; height: 30px; background-repeat: no-repeat; content: " "; margin: -2px 10px 0 0; vertical-align: middle; }
 .browser.safari { background: #4988E2; border: 1px solid #5691e4; border-bottom: 2px solid transparent; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; }
 .browser.safari:hover { background: #75a5e9; border-top: 1px solid #75a5e9; border-bottom: 2px solid #2671dc; }
@@ -1765,8 +1771,8 @@ header .field { display: inline-block; float: right; margin-top: 1px; }
 a:last-child > .teaser { margin-right: 0; }
 
 .cahoots-proposal-form { border: none !important; border-radius: 0 !important; box-shadow: none !important; width: 85% !important; margin: 0 auto !important; padding: 0 !important; text-align: left !important; }
-.cahoots-proposal-form label { margin-bottom: 0; }
-.cahoots-proposal-form small { margin-left: 10px; color: #96969A; }
+.cahoots-proposal-form label { margin-bottom: 5px; }
+.cahoots-proposal-form small { color: #96969A; }
 
 .cahoots-proposal-form--header-headline { display: none; }
 
@@ -1783,9 +1789,15 @@ a:last-child > .teaser { margin-right: 0; }
 .cahoots-proposal-form--buttons input { padding: 9px 14px; border-radius: 4.5px; color: #fff; font-weight: 400; font-size: 1em; margin-right: 15px; background: #393942; border: 1px solid #454550; }
 .cahoots-proposal-form--buttons input:hover { cursor: pointer; }
 
-.trigger { padding: 13px 18px 14px; border-radius: 4.5px; color: #fff; font-weight: 400; font-size: 1em; margin-right: 15px; background: #393942; border: 1px solid #454550; }
+.trigger { padding: 13px 18px 14px; border-radius: 4.5px; color: #fff; font-weight: 400; font-size: 1em; margin-right: 15px; background: #393942; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; border: 1px solid #40404a; border-bottom: 2px solid transparent; }
 @media only screen and (max-width: 767px) { .trigger { width: 92%; text-align: center; margin: 0; } }
-.trigger:hover { cursor: pointer; }
+.trigger:hover { background: #585866; border-top: 1px solid #585866; border-bottom: 2px solid #26262c; }
+.trigger:focus { background: #212127; border-top: 0; border: 1px solid #2d2d34; }
+
+.action { padding: 8px 12px; border-radius: 4.5px; color: #fff; font-weight: 400; font-size: 1em; margin: -37px 7.5% 0 0; float: right; background: #F53262; border: 1px solid #f64a75; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; border: 1px solid #f6416d; border-bottom: 2px solid transparent; }
+@media only screen and (max-width: 767px) { .action { width: 92%; text-align: center; margin: 0; } }
+.action:hover { cursor: pointer; background: #f87192; border-top: 1px solid #f87192; border-bottom: 2px solid #f20c45; }
+.action:focus { background: #e90b42; border-top: 0; border: 1px solid #f41a4f; }
 
 .dialog, .dialog__overlay { width: 100%; height: 100%; top: 0; left: 0; }
 
