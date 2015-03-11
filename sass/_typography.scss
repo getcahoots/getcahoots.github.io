@@ -43,6 +43,7 @@ h3 { @include font-size($larger);}
 h4 { 
   @include font-size($large); 
   margin-bottom: 15px;
+  color: $secondary-color;
 }
 h5 { @include font-size($med);}
 h6 { @include font-size($norm);}

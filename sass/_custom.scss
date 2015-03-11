@@ -527,7 +527,7 @@ a:last-child > .teaser {
 .dialog__overlay {
 	position: absolute;
 	z-index: 1;
-	@include background-image(linear-gradient(left top,  rgba(245,50,98,0.94) 0%,rgba(255, 255, 145,0.94) 100%));
+	@include background-image(linear-gradient(left top,  rgba(245,50,98,0.96) 0%,rgba(255, 255, 145,0.96) 100%));
 	//background: rgba(245,50,98,0.92);
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
@@ -545,7 +545,7 @@ a:last-child > .teaser {
 	max-width: 560px;
 	min-width: 290px;
 	background: #fff;
-	padding: 25px 0;
+	padding: 30px 0;
 	text-align: center;
 	position: relative;
 	z-index: 5;
@@ -555,7 +555,7 @@ a:last-child > .teaser {
 .dialog--open .dialog__content {
 	pointer-events: auto;
 	@include border-radius($bigger-radius);
-	@include box-shadow(0 0 40px rgba(0,0,0,0.4));
+	@include box-shadow(0 0 70px rgba(0,0,0,0.45));
 }
 
 /* Content */
