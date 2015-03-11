@@ -634,6 +634,25 @@ a:last-child > .teaser {
 	animation-name: anim-close;
 }
 
+
+	
+.cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error.visible {
+	color: $cahoots-color;
+	@include opacity(1); 
+	@include transform(scale(1.05));
+	@include transition(all ease-in-out 0.3s);
+}
+
+.cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error.hidden {
+	@include opacity(0);
+	@include transform(scale(1));
+	@include transition(all ease-in-out 0.3s);
+}
+
+.cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error {
+
+}
+
 @-webkit-keyframes anim-open {
 	0% { opacity: 0; -webkit-transform: scale3d(1.1, 1.1, 1); }
 	100% { opacity: 1; -webkit-transform: scale3d(1, 1, 1); }

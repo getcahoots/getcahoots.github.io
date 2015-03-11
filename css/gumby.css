@@ -698,7 +698,7 @@ em { font-style: italic; line-height: inherit; }
 
 strong { font-weight: 700; line-height: inherit; }
 
-small { font-size: 56.4%; line-height: inherit; }
+small { font-size: 0.8em; line-height: inherit; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small { color: #777; }
 
@@ -1832,6 +1832,10 @@ a:last-child > .teaser { margin-right: 0; }
 .dialog.dialog--open .dialog__content { -webkit-animation-name: anim-open; animation-name: anim-open; }
 
 .dialog.dialog--close .dialog__content { -webkit-animation-name: anim-close; animation-name: anim-close; }
+
+.cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error.visible { color: #F53262; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transform: scale(1.05); -ms-transform: scale(1.05); -webkit-transform: scale(1.05); transform: scale(1.05); -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.cahoots-proposal-form > .cahoots-proposal-form--entry > .cahoots-proposal-form--entry-error.hidden { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; -moz-transform: scale(1); -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
 @-webkit-keyframes anim-open { 0% { opacity: 0; -webkit-transform: scale3d(1.1, 1.1, 1); }
   100% { opacity: 1; -webkit-transform: scale3d(1, 1, 1); } }
