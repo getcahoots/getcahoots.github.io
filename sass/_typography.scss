@@ -93,6 +93,19 @@ a {
   }
 }
 
+p a {
+  color: $body-link-color;
+  outline: 0;
+  line-height: inherit;
+  border-bottom: 1px solid lighten($secondary-color,20%);
+  padding-bottom: 3px;
+  @include transition(border ease-in-out 0.3s);
+  &:hover {
+    color: $body-link-color;
+    border-bottom: 1px solid $cahoots-color;
+  }
+}
+
 /*=====================================================
 
   Lists
