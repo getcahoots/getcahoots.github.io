@@ -669,8 +669,8 @@ p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 a { color: #393942; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #F53262; }
 
-p a { color: #393942; outline: 0; line-height: inherit; border-bottom: 1px solid #cacacc; padding-bottom: 3px; -moz-transition: border 0.3s ease-in-out; -o-transition: border 0.3s ease-in-out; -webkit-transition: border 0.3s ease-in-out; transition: border 0.3s ease-in-out; }
-p a:hover { color: #393942; border-bottom: 1px solid #F53262; }
+p a { color: #393942; outline: 0; line-height: inherit; border-bottom: 1px solid #F53262; padding-bottom: 3px; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; padding: 3px; }
+p a:hover { color: #F4F4F6; border-bottom: 1px solid #F53262; background: #F53262; border-radius: 3px; }
 
 /*=====================================================
  Lists
