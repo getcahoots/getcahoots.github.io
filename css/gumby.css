@@ -1617,8 +1617,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 header { position: fixed; left: 0; top: 0; height: 114px; width: 100%; display: inline-block; background: #F4F4F6; border-bottom: 1px solid #e3e3e8; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=96); opacity: 0.96; }
-@media only screen and (max-width: 1199px) { header { background: #F4F4F6; position: static; height: auto; display: block; } }
-@media only screen and (max-width: 1199px) { header #logo { text-align: center; display: block; margin-bottom: 20px; } }
+@media only screen and (max-width: 1199px) { header { padding: 30px 0; background: #F4F4F6; position: static; height: auto; display: block; } }
+@media only screen and (max-width: 1199px) { header #logo { text-align: center; display: block; margin-bottom: 20px; -moz-transform: scale(1.4); -ms-transform: scale(1.4); -webkit-transform: scale(1.4); transform: scale(1.4); } }
 header .twelve { margin-top: 32px; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 @media only screen and (max-width: 1199px) { header .twelve { display: block; float: inherit; margin-bottom: 20px; } }
 header .field { display: inline-block; float: right; margin-top: 1px; display: none; }

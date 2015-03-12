@@ -17,6 +17,7 @@ header {
 	@include transition(all ease-in-out 0.3s);
 	@include opacity(0.96);
 	@include respond(all-phones) {
+		padding: 30px 0;
 		background: $global-bg-color;
 		position: static;
 		height: auto;
@@ -27,6 +28,7 @@ header {
 			text-align: center;
  			display: block;
  			margin-bottom: 20px;
+ 			@include transform(scale(1.4));
 		}
 	}
 	& .twelve {
