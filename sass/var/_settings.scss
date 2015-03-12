@@ -9,8 +9,8 @@ $cols: 12 !default;              				// 12 Column Default Grid
 $hybrid: 16 !default;							// 16 Column Default Hybrid Grid
 
 // Responsiveness Settings
-$min-device-width: 320px; 						// iPhone Portrait
-$tablet-device-width: 768px;					// iPad Portrait
+$min-device-width: 1200px; 						// iPhone Portrait
+$tablet-device-width: 1200px;					// iPad Portrait
 $document-width: $row-max-width;				// Default Document
 $max-device-width: 2880px;						// Max Document Size
 

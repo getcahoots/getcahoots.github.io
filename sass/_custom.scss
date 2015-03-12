@@ -73,7 +73,7 @@ header {
 	&#changelog { 
 		width: 525px;
 		@include respond(all-phones) {
-			width: 92%;
+			width: 86%;
 		}
 	}
 	&#descr {
@@ -90,6 +90,9 @@ header {
 		text-align: center;
 		border-top: 1px solid lighten($secondary-color,40%);
 		padding-top: 30px;
+		@include respond(all-phones) {
+			width: 86%;
+		}
 		& h1, h2, ul {
 			//width: 48% !important;
 			margin: 0 auto;
@@ -216,7 +219,7 @@ header {
 	padding: 70px 0;
 	@include box-shadow(0 -2px 20px rgba(0,0,0,0.2));
 	@include respond(all-phones) {
-		padding: 30px 0;
+		padding: 40px 0 50px;
 	}
 	&.light {
 		// @include background-image(linear-gradient(top, $global-bg-color 0%,darken($global-bg-color,6%) 100%));
@@ -378,7 +381,7 @@ header {
 		margin: 0 auto;
 		@include respond(all-phones) {
 			display: block;
-			width: 92%;
+			width: 86%;
 		}
 	}
 }
@@ -395,7 +398,7 @@ header {
 		display: block;
 		text-align: center;
 		margin: 30px auto 0;
-		width: 92%;
+		width: 86%;
 	}
 	&:hover {
 		color: #fff;
@@ -578,7 +581,7 @@ header {
 		vertical-align: middle;
 		@include respond(all-phones) {
 			float: inherit;
-		  	width: 92%;
+		  	width: 86%;
  			margin: 60px auto 0;
  			display: block;
  		}
@@ -591,7 +594,7 @@ header {
 		vertical-align: middle;
 		@include respond(all-phones) {
 			float: inherit;
-		  	width: 92%;
+		  	width: 86%;
  			margin: 60px auto 0;
  			display: block;
  		}
@@ -604,7 +607,7 @@ header {
 		vertical-align: middle;
 		@include respond(all-phones) {
 			float: inherit;
-		  	width: 92%;
+		  	width: 86%;
  			margin: 60px auto 0;
  			display: block;
  		}
@@ -617,7 +620,7 @@ header {
 		vertical-align: middle;
 		@include respond(all-phones) {
 			float: inherit;
-		  	width: 92%;
+		  	width: 86%;
  			margin: 60px auto 0;
  			display: block;
  		}
@@ -626,6 +629,9 @@ header {
 
 a:last-child > .teaser {
 	margin-right: 0;
+	@include respond(all-phones) {
+		margin-right: auto;
+ 	}
 }
 
 .cahoots-proposal-form {
@@ -666,13 +672,16 @@ a:last-child > .teaser {
 	margin-right: 4%;
 	display: inline-block;
 	vertical-align: top;
-	@include respond(all-phones) {
-		width: 92%;
+	@include respond(all-phones) { 
+		width: 86%;
 		margin: 0 auto;
 		display: block;
 	}
 	&:last-child {
 		margin: 0;
+		@include respond(all-phones) {
+			margin: inherit;
+		}
 	}
 }
 
@@ -724,7 +733,7 @@ a:last-child > .teaser {
     border: 1px solid lighten($default-color,3%);
     border-bottom: 2px solid transparent;
 	@include respond(all-phones) {
-		width: 92%;
+		width: 220px;
 		text-align: center;
 		margin: 0;
 	}
@@ -753,7 +762,7 @@ a:last-child > .teaser {
     border: 1px solid lighten($default-color,3%);
     border-bottom: 2px solid transparent;
 	@include respond(all-phones) {
-		width: 92%;
+		width: 86%;
 		text-align: center;
 		margin: 0;
 	}
