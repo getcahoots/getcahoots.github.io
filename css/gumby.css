@@ -1677,10 +1677,10 @@ header .field { display: inline-block; float: right; margin-top: 1px; }
 .browser.firefox:hover { background: #e16933; border-top: 1px solid #e16933; border-bottom: 2px solid #a04218; }
 .browser.firefox:focus { background: #983f16; border-top: 0; border: 1px solid #ae481a; }
 .browser.firefox:before { background-repeat: no-repeat; background-position: center center; background-image: url("../img/firefox_browser.svg"); background-size: 30px 30px; display: inline-block; width: 30px; height: 30px; background-repeat: no-repeat; content: " "; margin: -2px 10px 0 0; vertical-align: middle; }
-.browser.safari { background: #4988E2; border: 1px solid #5691e4; border-bottom: 2px solid transparent; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; }
-.browser.safari:hover { background: #75a5e9; border-top: 1px solid #75a5e9; border-bottom: 2px solid #2671dc; }
-.browser.safari:focus { background: #226cd6; border-top: 0; border: 1px solid #337ade; }
-.browser.safari:before { background-repeat: no-repeat; background-position: center center; background-image: url("../img/safari_browser.svg"); background-size: 30px 30px; display: inline-block; width: 30px; height: 30px; background-repeat: no-repeat; content: " "; margin: -2px 10px 0 0; vertical-align: middle; }
+.browser.safari { color: #96969A; background: #393942; border: 1px solid #40404a; border-bottom: 2px solid transparent; -moz-transition: all 0.125s ease-in-out; -o-transition: all 0.125s ease-in-out; -webkit-transition: all 0.125s ease-in-out; transition: all 0.125s ease-in-out; }
+.browser.safari:hover { background: #51515d; border-top: 1px solid #51515d; border-bottom: 2px solid #26262c; }
+.browser.safari:focus { background: #212127; border-top: 0; border: 1px solid #2d2d34; }
+.browser.safari:before { background-repeat: no-repeat; background-position: center center; background-image: url("../img/safari_soon.svg"); background-size: 30px 30px; display: inline-block; width: 30px; height: 30px; background-repeat: no-repeat; content: " "; margin: -2px 10px 0 0; vertical-align: middle; }
 
 .text.main { width: 48%; margin: 0 auto; }
 

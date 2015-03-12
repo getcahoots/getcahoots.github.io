@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="23px"
+   height="23px"
+   viewBox="0 0 23 23"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="safari_soon.svg">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>safari1</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1316"
+     inkscape:window-height="825"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="10.26087"
+     inkscape:cx="11.694915"
+     inkscape:cy="11.5"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Rectangle-4-+-Safari-+-safari1" />
+  <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title4">safari1</title>
+  <desc
+     id="desc6">Created with Sketch.</desc>
+  <defs
+     id="defs8" />
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     sketch:type="MSPage">
+    <g
+       id="Desktop-HD"
+       sketch:type="MSArtboardGroup"
+       transform="translate(-812.000000, -822.000000)">
+      <g
+         id="Rectangle-4-+-Safari-+-safari1-+-Rectangle-4-+-chrome4-+-Rectangle-4-+-firefox"
+         sketch:type="MSLayerGroup"
+         transform="translate(529.000000, 814.000000)">
+        <g
+           id="Rectangle-4-+-Safari-+-safari1"
+           transform="translate(273.333874, 0.000000)"
+           sketch:type="MSShapeGroup">
+          <g
+             id="safari1"
+             transform="translate(9.887496, 8.289855)">
+            <path
+               d="M11.1232018,0 C4.98979641,0 1.77635684e-15,5.0205431 1.77635684e-15,11.190878 C1.77635684e-15,17.3620656 4.98979641,22.3826087 11.1232018,22.3826087 C17.2566072,22.3826087 22.2468659,17.3620656 22.2468659,11.190878 C22.2467888,5.0205431 17.2566072,0 11.1232018,0 L11.1232018,0 Z"
+               id="Shape"
+               fill="#F4F4F6"
+               style="fill:#96969a;fill-opacity:1" />
+            <path
+               d="M9.41530928,9.94782609 L12.3593699,13.1116523 L5.76770597,16.5797101 L9.41530928,9.94782609 L9.41530928,9.94782609 Z"
+               id="path16"
+               fill="#4986E2"
+               style="fill:#393942;fill-opacity:1" />
+            <path
+               d="M14.3590573,4.97391304 L17.3031179,8.13773928 L10.7114539,11.6057971 L14.3590573,4.97391304 L14.3590573,4.97391304 Z"
+               id="Shape-2"
+               fill="#4986E2"
+               transform="translate(14.007286, 8.289855) scale(-1, -1) translate(-14.007286, -8.289855) "
+               style="fill:#393942;fill-opacity:1" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

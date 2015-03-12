@@ -436,3 +436,12 @@
 	-ms-transform: scale(1.1, 1.1);
 	transform: scale(1.1, 1.1);
 }
+
+.sooon_popover {
+	padding: 14px 16px;
+	font-size: 1.1em;
+	background: rgb(245,245,245);
+	border-radius: 5px;
+	border-radius: 1px solid rgb(230,230,230);
+	font-weight: 400;
+}

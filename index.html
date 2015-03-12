@@ -100,7 +100,7 @@
 			</span>
 			<button class="browser chrome" onclick="chrome.webstore.install()" id="install-button">Chrome</button>
 			<button class="browser firefox">Firefox</button>
-			<button class="browser safari">Safari</button>
+			<button class="browser safari" id="sooon">Safari</button>
 		</div>
 		<div class="wrapper" id="descr">
 			<h2>
@@ -279,7 +279,10 @@
 	<script>
         $(document).ready(function() {
             $('.tooltip').tooltipster({
-                content: $('<div class="chts_popover"> <p class="chts_top">Für <strong><a class="name_info" href="" target="_blank">Max Mustermann</a></strong> wurden die folgenden Verbindungen gefunden:</p><section class="chts_middle"> <ul id="chts_list"> <li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Europa-Union</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Referent</span> </li><li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Amsterdam Forum</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Teilnehmer</span> </li><li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Bertelsfrau-Stiftung</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Art der Verbindung unbekannt</span> </li><li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Kärber-Stiftung</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Gast</span> </li></ul> </section> <section class="chts_footer"> <a class="chts_logo" href="http://www.chts.pw/" target="_blank"></a><a class="chts_button" href="mailto:mail@chts.pw?subject=Fehler" target="_blank">Fehler melden</a> </section> </div>')
+                content: $('<div class="chts_popover"> <p class="chts_top">Für <strong><a class="name_info" href="" target="_blank">Max Mustermann</a></strong> wurden die folgenden Verbindungen gefunden:</p><section class="chts_middle"> <ul id="chts_list"> <li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Europa-Union</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Referent</span> </li><li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Amsterdam Forum</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Teilnehmer</span> </li><li class="chts_item"> <a href="" target="_blank" title="Mehr Infos zu dieser Organisation">Bertelsfrau-Stiftung</a><a class="quelle" href="" target="_blank">Quelle</a><br><span class="role">Art der Verbindung unbekannt</span> </li></ul> </section> <section class="chts_footer"> <a class="chts_logo" href="http://www.chts.pw/" target="_blank"></a><a class="chts_button" href="mailto:mail@chts.pw?subject=Fehler" target="_blank">Fehler melden</a> </section> </div>')
+            });
+			$('#sooon').tooltipster({
+                content: $('<div class="sooon_popover">Demnächst auch für Safari!</div>')
             });
     	});
     </script>
