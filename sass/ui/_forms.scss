@@ -101,6 +101,9 @@ input, .input {
   width: 100%;
   color: $default-color;
   border: 1px solid $secondary-color;
+  @include respond(all-phones) {
+    padding: 6px 8px;
+  }
   &:focus {
     background: #fff;
     border: 1px solid lighten($secondary-color,50%);

@@ -44,7 +44,7 @@ header {
 		margin-top: 1px;
 		display: none;
 		@include respond(all-phones) {
-			display: block;
+			//display: block;
 			float: inherit;
 		}
 	}
@@ -68,6 +68,12 @@ header {
 		width: 1050px;
 		@include respond(all-phones) {
 			width: 100%;
+		}
+	}
+	&#changelog { 
+		width: 525px;
+		@include respond(all-phones) {
+			width: 92%;
 		}
 	}
 	&#descr {
@@ -237,6 +243,9 @@ header {
 		border-top: 1px solid darken($global-bg-color, 5%);
 		@include box-shadow(none);
 		padding: 170px 0 50px;
+		@include respond(all-phones) {
+			padding: 40px 0 50px;
+		}
 		// min-height: 90%;
 	}
 	&.dark {
@@ -629,6 +638,10 @@ a:last-child > .teaser {
 	text-align: left !important;
 	& label {
 		margin-bottom: 5px;
+		@include respond(all-phones) {
+			font-size: 1em;
+			margin-bottom: 2px;
+ 		}
 	}
 	& small {
 		color: $secondary-color;
@@ -641,6 +654,9 @@ a:last-child > .teaser {
 
 .cahoots-proposal-form--entry {
 	margin-bottom: 15px;
+	@include respond(all-phones) {
+		margin-bottom: 5px;
+ 	}
 }
 .cahoots-proposal-form--header-description {
 	margin-bottom: 20px;
@@ -674,28 +690,24 @@ a:last-child > .teaser {
 		float: inherit;
 	}
 }
-.cahoots-proposal-form--buttons input {
-	padding: 9px 14px;
-	border-radius: $bigger-radius*1.5;
-	color: #fff;
-	font-weight: 400;
-	font-size: 1em;
-	margin-right: 15px;
-	background: $default-color;
-	border: 1px solid lighten($default-color,5%);
-	// &:before {
-	// 	background-repeat: no-repeat;
-	// 	background-position: center center;
-	// 	background-image: url('../img/chrome_browser.svg');
-	// 	background-size: 30px 30px;
-	// 	display: inline-block;
-	// 	width: 30px;
-	// 	height: 30px;
-	// 	background-repeat: no-repeat;
-	// 	content: " ";
-	// 	margin: -2px 10px 0 0;
-	// 	vertical-align: middle;
-	// }
+.cahoots-proposal-form--buttons {
+	@include respond(all-phones) {
+		text-align: center;	
+	}
+	& input {
+		padding: 9px 14px;
+		border-radius: $bigger-radius*1.5;
+		color: #fff;
+		font-weight: 400;
+		font-size: 1em;
+		margin-right: 15px;
+		background: $default-color;
+		border: 1px solid lighten($default-color,5%);
+		@include respond(all-phones) {
+			padding: 9px 18px;
+			margin-right: 0;
+		}
+	}
 	&:hover {
 		cursor: pointer;
 	}
@@ -773,9 +785,10 @@ a:last-child > .teaser {
     border: 1px solid lighten($cahoots-color,3%);
     border-bottom: 2px solid transparent;
 	@include respond(all-phones) {
-		width: 92%;
+		width: 44%;
 		text-align: center;
-		margin: 0;
+		float: inherit;
+		margin: 10px 0 0 0;
 	}
     &:hover {
     	cursor: pointer;
@@ -835,6 +848,10 @@ a:last-child > .teaser {
 	position: relative;
 	z-index: 5;
 	opacity: 0;
+	@include respond(all-phones) {
+		font-size: 0.7em !important;
+		padding: 15px 0;
+ 	}
 }
 
 .dialog--open .dialog__content {
