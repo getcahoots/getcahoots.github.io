@@ -42,6 +42,7 @@ header {
 		display: inline-block;
 		float: right;
 		margin-top: 1px;
+		display: none;
 		@include respond(all-phones) {
 			display: block;
 			float: inherit;
@@ -59,15 +60,24 @@ header {
 	&#install {
 		text-align: center;
 		margin-bottom: 50px; 
+		@include respond(all-phones) {
+			margin-bottom: 20px;
+		}
 	}
 	&#sub { 
 		width: 1050px;
+		@include respond(all-phones) {
+			width: 100%;
+		}
 	}
 	&#descr {
 		text-align: center;
 	}
 	&#presse {
 		width: 1050px;
+		@include respond(all-phones) {
+			width: 100%;
+		}
 	}
 	&#footer {
 		width: 100%;
@@ -199,6 +209,9 @@ header {
 	height: auto;
 	padding: 70px 0;
 	@include box-shadow(0 -2px 20px rgba(0,0,0,0.2));
+	@include respond(all-phones) {
+		padding: 30px 0;
+	}
 	&.light {
 		// @include background-image(linear-gradient(top, $global-bg-color 0%,darken($global-bg-color,6%) 100%));
 		background: $global-bg-color;
@@ -227,8 +240,12 @@ header {
 		// min-height: 90%;
 	}
 	&.dark {
+		padding: 50px 0 70px;
 		@include background-image(linear-gradient(left top, #3e3e47 0%,#25252d 100%));
 		border-top: 1px solid #25252d;
+		@include respond(all-phones) {
+			padding: 20px 0 40px;
+		}
 	}
 }
 
@@ -350,6 +367,10 @@ header {
 	&.main {
 		width: 48%;
 		margin: 0 auto;
+		@include respond(all-phones) {
+			display: block;
+			width: 92%;
+		}
 	}
 }
 
@@ -361,6 +382,12 @@ header {
 	vertical-align: top;
 	@include transition(all .1s ease-in-out);
 	@include text-shadow(0 0 1px $primary-color);
+	@include respond(all-phones) {
+		display: block;
+		text-align: center;
+		margin: 30px auto 0;
+		width: 92%;
+	}
 	&:hover {
 		color: #fff;
 		@include text-shadow(0 0 20px rgba(0,0,0,0.6));
@@ -448,6 +475,9 @@ header {
 		color: $secondary-color;
 		vertical-align: middle;
 		margin-top: -36px;
+		@include respond(all-phones) {
+			margin-left: -56px;
+ 		}
 		&:before {
 			content:'';
 			display: inline-block;
@@ -468,6 +498,10 @@ header {
 		vertical-align: middle;
 		margin-top: 54px;
 		margin-left: 40px;
+		@include respond(all-phones) {
+			margin-left: -24px;
+			margin-top: 0;
+ 		}
 		&:before {
 			content:'';
 			display: inline-block;
@@ -488,6 +522,10 @@ header {
 		vertical-align: middle;
 		margin-top: 54px;
 		margin-left: 40px;
+		@include respond(all-phones) {
+			margin-left: -24px;
+			margin-top: 0;
+ 		}
 		&:before {
 			content:'';
 			display: inline-block;
@@ -508,6 +546,9 @@ header {
 		vertical-align: middle;
 		margin-top: 54px;
 		margin-left: -18px;
+		@include respond(all-phones) {
+			margin-left: -60px;
+ 		}
 		&:before {
 			content:'';
 			display: inline-block;
@@ -526,6 +567,12 @@ header {
 		width: 655px;
 		float: right;
 		vertical-align: middle;
+		@include respond(all-phones) {
+			float: inherit;
+		  	width: 92%;
+ 			margin: 60px auto 0;
+ 			display: block;
+ 		}
 	}
 	& p#taz {
 		display: inline-block;
@@ -533,6 +580,12 @@ header {
 		margin-top: -44px;
 		float: right;
 		vertical-align: middle;
+		@include respond(all-phones) {
+			float: inherit;
+		  	width: 92%;
+ 			margin: 60px auto 0;
+ 			display: block;
+ 		}
 	}
 	& p#ndr{
 		display: inline-block;
@@ -540,6 +593,12 @@ header {
 		margin-top: -84px;
 		float: right;
 		vertical-align: middle;
+		@include respond(all-phones) {
+			float: inherit;
+		  	width: 92%;
+ 			margin: 60px auto 0;
+ 			display: block;
+ 		}
 	}
 	& p#dlf{
 		display: inline-block;
@@ -547,6 +606,12 @@ header {
 		margin-top: -32px;
 		float: right;
 		vertical-align: middle;
+		@include respond(all-phones) {
+			float: inherit;
+		  	width: 92%;
+ 			margin: 60px auto 0;
+ 			display: block;
+ 		}
 	}
 }
 
@@ -584,6 +649,12 @@ a:last-child > .teaser {
 	width: 46%;
 	margin-right: 4%;
 	display: inline-block;
+	vertical-align: top;
+	@include respond(all-phones) {
+		width: 92%;
+		margin: 0 auto;
+		display: block;
+	}
 	&:last-child {
 		margin: 0;
 	}
