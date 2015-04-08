@@ -1737,7 +1737,7 @@ a:last-child > .teaser { margin-right: 0; }
 
 .cahoots-proposal-form--header-headline { display: none; }
 
-.cahoots-proposal-form--entry { margin-bottom: 15px; }
+.cahoots-proposal-form--entry { margin-bottom: 6px; }
 @media only screen and (max-width: 1199px) { .cahoots-proposal-form--entry { margin-bottom: 5px; } }
 
 .cahoots-proposal-form--header-description { margin-bottom: 20px; }
