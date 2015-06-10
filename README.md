@@ -1,25 +1,5 @@
-Gumby Framework [![Build Status](https://travis-ci.org/GumbyFramework/Gumby.svg?branch=master)](https://travis-ci.org/GumbyFramework/Gumby)
+Our website build with Gumby Framework [![Build Status](https://travis-ci.org/GumbyFramework/Gumby.svg?branch=master)](https://travis-ci.org/GumbyFramework/Gumby)
 =====================
-
-Gumby Framework is a flexible, responsive CSS Framework, Powered by SASS. Create rapid and logical page layout and app
-prototypes with a flexible and responsive grid system and UI kit.
-
-Full documentation can be found at [http://gumbyframework.com](http://gumbyframework.com/docs).
-
-More information, including our changelog, can be found in the [Wiki](https://github.com/GumbyFramework/Gumby/wiki).
-
-Our [Google Plus Community](https://plus.google.com/u/0/communities/108760896951473344451) is rapidly growing, we recommend heading over there with any questions you may have or to geek out and discuss the framework and rwd in general.
-
-Gumby is developed with love by your friends at [Digital Surgeons](http://www.digitalsurgeons.com).
-
-Gumby has a few dependencies. Big thank you to the innovative geniuses behind these awesome technologies.
-
-- [Sass](https://github.com/nex3/sass) - Nathan Weizenbaum
-- [Compass](https://github.com/chriseppstein/compass) - Chris Eppstein
-- [Modular Scale](https://github.com/Team-Sass/modular-scale) - Scott Kellum  *Note: Please use modular scale 1.0.6, 2.x has not been integrated yet*
-- [FitText](http://fittextjs.com/) - Paravel
-- [jQuery](http://jquery.com/)
-- [Modernizr](http://modernizr.com/)
 
 **MIT Open Source License**
 

@@ -140,8 +140,10 @@ header {
 	height: 545px;
 	width: 100%;
 	background: url('../img/bg.jpg') center center no-repeat;
-	background-size: 100% auto;
+	background-size: 106% auto; 
+	display: -webkit-flex;
 	display: flex;
+	-webkit-align-items: flex-end;
 	align-items: flex-end;
 	@include respond(all-phones) {
 		background: $global-bg-color;

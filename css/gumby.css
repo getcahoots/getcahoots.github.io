@@ -1647,7 +1647,7 @@ header .field { display: inline-block; float: right; margin-top: 1px; display: n
 .wrapper#footer ul a li { display: inline; border-bottom: 1px solid #cacacc; padding-bottom: 3px; -moz-transition: border 0.3s ease-in-out; -o-transition: border 0.3s ease-in-out; -webkit-transition: border 0.3s ease-in-out; transition: border 0.3s ease-in-out; }
 .wrapper#footer ul a li:hover { border-bottom: 1px solid #F53262; }
 
-#intro { margin-top: 113px; height: 545px; width: 100%; background: url("../img/bg.jpg") center center no-repeat; background-size: 100% auto; display: flex; align-items: flex-end; }
+#intro { margin-top: 113px; height: 545px; width: 100%; background: url("../img/bg.jpg") center center no-repeat; background-size: 106% auto; display: -webkit-flex; display: flex; -webkit-align-items: flex-end; align-items: flex-end; }
 @media only screen and (max-width: 1199px) { #intro { background: #F4F4F6; height: auto; margin-top: 0; } }
 #intro #chrome { width: 1055px; height: 493px; background: url("../img/chrome.png") top center no-repeat; background-size: 1030px 543px; margin: 0 auto; }
 @media only screen and (max-width: 1199px) { #intro #chrome { background: #F4F4F6; height: auto; } }
