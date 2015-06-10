@@ -1778,7 +1778,7 @@ a:last-child > .teaser { margin-right: 0; }
 
 .dialog--open .dialog__overlay { opacity: 1; pointer-events: auto; }
 
-.dialog__content { width: 50%; max-width: 560px; min-width: 290px; background: #fff; padding: 30px 0; text-align: center; position: relative; z-index: 5; opacity: 0; }
+.dialog__content { width: 50%; max-width: 560px; min-width: 290px; background: #fff; padding: 30px 0; text-align: center; position: relative; z-index: 5; opacity: 0; max-height: 96%; overflow-y: scroll; }
 @media only screen and (max-width: 1199px) { .dialog__content { font-size: 0.7em !important; padding: 15px 0; } }
 
 .dialog--open .dialog__content { pointer-events: auto; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 70px rgba(0, 0, 0, 0.45); -webkit-box-shadow: 0 0 70px rgba(0, 0, 0, 0.45); box-shadow: 0 0 70px rgba(0, 0, 0, 0.45); }
