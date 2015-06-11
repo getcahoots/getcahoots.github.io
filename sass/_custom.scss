@@ -861,6 +861,8 @@ a:last-child > .teaser {
 	position: relative;
 	z-index: 5;
 	opacity: 0;
+	max-height: 96%;
+	overflow-y: scroll;
 	@include respond(all-phones) {
 		font-size: 0.7em !important;
 		padding: 15px 0;
